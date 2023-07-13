@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products details</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style2.css">
+
+    <style>
+        .sproduct .row{
+            display: -ms-grid;
+            display: grid;
+                -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+                grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+            gap: 1.5rem;
+        }
+        .sproduct .row .detail{
+            height: 45rem;
+            width: 100%;
+            overflow: hidden;
+            margin-left: 3rem;
+        }
+        .sproduct .row .detail img{
+            height: 100%;
+            width: 100%;
+             -o-object-fit: cover;
+             object-fit: cover;
+        }
+      .sproduct .detail1 h6{
+        font-size: 2rem;
+         padding-bottom: 2rem;
+         margin-left: 10rem;
+        color:rgb(133, 130, 130);
+      }
+      .sproduct .detail1 h3{
+        font-size: 2rem;
+         padding-bottom: 2rem;
+         margin-left: 10rem;
+        color: black;
+      }
+      .sproduct .detail1 h2{
+        font-size: 2rem;
+         padding-bottom: 2rem;
+         margin-left: 10rem;
+        color: black;
+      }
+      .sproduct .detail1 h4{
+        font-size: 2rem;
+        margin-top: 8rem;
+         padding-bottom: 2rem;
+         margin-left: 10rem;
+        color: black;
+      }
+    .sproduct .detail1 .quantity{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding-top: .4rem;
+     padding-bottom: .5rem;
+     margin-right: 30rem;
+    }
+    .sproduct .detail1 .quantity span{
+  padding:0 .8rem;
+  font-size: 1.7rem;
+}
+    .sproduct .detail1 p {
+  font-size: 1.5rem;
+  color: #666;
+  margin-left: 14rem;
+  margin-bottom: 8rem;
+    }
+    .sproduct  .detail1 .quantity span{
+ 
+    font-size: 2rem;
+    }
+.btn {
+  margin-top: 5rem;
+  display: inline-block;
+  padding: .8rem 1rem;
+  background: #bac34e;
+  color: #fff;
+  margin-bottom: 5rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+  margin-left: 10rem;
+}
+
+.btn:hover {
+  background: #222;
+}
+</style>
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="home.html" class="logo"> <i class="fas fa-shopping-basket"></i> grocery shopping </a>
+
+    <nav class="navbar">
+        <a href="home.html">home</a>
+        <a href="shop.html">shop</a>
+        <a href="about.html">about</a>
+        <a href="review.html">review</a>
+        <a href="contact.html">contact</a>
+    </nav>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <div id="cart-btn" class="fas fa-shopping-cart"></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="image/cart-1.jpg" alt="">
+            <div class="content">
+                <h3>organic food</h3>
+                <span class="quantity">1</span>
+                <span class="multiply">x</span>
+                <span class="price">$18.99</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="image/cart-2.jpg" alt="">
+            <div class="content">
+                <h3>organic food</h3>
+                <span class="quantity">1</span>
+                <span class="multiply">x</span>
+                <span class="price">$18.99</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="image/cart-3.jpg" alt="">
+            <div class="content">
+                <h3>organic food</h3>
+                <span class="quantity">1</span>
+                <span class="multiply">x</span>
+                <span class="price">$18.99</span>
+            </div>
+        </div>
+        <h3 class="total"> total : <span>56.97</span> </h3>
+        <a href="#" class="btn">checkout cart</a>
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+<div class="heading">
+    <h1>our products details</h1>
+    <p> <a href="vegetables.html">Fruits >></a> products details </p>
+</div>
+
+<section class="category">
+
+    <h1 class="title"> our <span>products details </span> </h1>
+
+</section>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+</nav>
+
+<selection class=" sproduct">
+    <div class="row "> 
+        <div class="detail">
+            <img src="image/papayajiuce.png" alt="">
+        </div>
+        <div class="detail1">
+            <h6>Grocery Shopping</h6>
+            <h3>Papaya - Juice</h3>
+            <h2>₹40.15</h2>
+            <div class="quantity">
+                <span>Quantity : </span>
+                <input type="number" min="1" max="500" value="1">
+                <span> /Li </span>
+                <br>
+            </div>
+            <button class="btn">Add To Cart</button>
+            <button class="btn">Buy Now</button>
+
+            <h4>Product Description</h4>
+            <p>Krishna's haemoglobin booster juice and papaya leaf juice is the great combination for general health. Taking both juices together is beneficial for digestions, increase blood platelets, haemoglobin overall health.</p>
+        </div>
+    </div>
+</selection>
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="home.html"> <i class="fas fa-arrow-right"></i> home</a>
+            <a href="shop.html"> <i class="fas fa-arrow-right"></i> shop</a>
+            <a href="about.html"> <i class="fas fa-arrow-right"></i> about</a>
+            <a href="review.html"> <i class="fas fa-arrow-right"></i> review</a>
+            <a href="contact.html"> <i class="fas fa-arrow-right"></i> contact</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> my order </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> my add to cart </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> my wishlist </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> my account </a>
+           
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <form action="">
+                <input type="email" placeholder="enter your email">
+                <input type="submit" value="subscribe" class="btn">
+            </form>
+           
+        </div>
+
+    </div>
+
+</section>
+
+<section class="credit">created by mr. aanand palan | all rights reserved!</section>
+
+<!-- footer section ends -->
+
+
+
+<!-- custom css file link  -->
+<script src="script.js"></script>
+
+</body>
+</html>
